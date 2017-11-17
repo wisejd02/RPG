@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>RPG</title> 
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+      <script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <style>
+      </style>
+  </head>
+  <body>
+  <div class="wrapper" >
+   <header>
+     <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+        </button>
+        <h1>Joshua Wise</h1>
+       </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav navbar-right" >
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+      </div><!-- /.container-fluid -->
+     </nav>
+   </header>
+   <div id="main" >
+     <div class="row" >
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+       <section class="arena">
+   <h2 id="sectHdr">Thunderdome 3000</h2>
+   
+   <button type="button" class="btn btn-success newGm" >Play Game</button>
+   <div id="sectMsg"></div>
+   <div id="attackRow" class="row Cntr">
+    <div class="col-lg-2 col-md-2 col-xs-0 "></div>
+    <div id="fighter1" class="col-lg-2 col-md-2 col-xs-12 fighter">
+     <img class="col-lg-12 col-md-12 col-xs-12 thumbnail" id="skele" src="assets/images/skele.jpg" alt="Crystal1" >
+     <h5 class="fData"></h5>
+    </div>
+    <div id="fighter2" class="col-lg-2 col-md-2 col-xs-12 fighter" >
+     <img class="col-lg-12 col-md-12 col-xs-12 thumbnail" id="pokeBat" src="assets/images/pokeBat.jpg" alt="Crystal2" >
+     <h5 class="fData"></h5>
+    </div>
+    <div id="fighter3" class="col-lg-2 col-md-2 col-xs-12 fighter" >
+     <img class="col-lg-12 col-md-12 col-xs-12 thumbnail" id="mage" src="assets/images/mage.jpg" alt="Crystal3" >
+     <h5 class="fData"></h5>
+    </div>
+    <div id="fighter4" class="col-lg-2 col-md-2 col-xs-12 fighter" >
+     <img class="col-lg-12 col-md-12 col-xs-12 thumbnail" id="pokeBear" src="assets/images/pokeBear.jpg" alt="Crystal4" >
+     <h5 class="fData"></h5>
+    </div>
+    <div class="col-lg-1 col-md-1 col-xs-0 "></div>
+   </div>
+   
+   <p id="gameWord"></p>
+   <div class="row padRow">
+    <div class="col-lg-2 col-md-2 col-xs-0 "></div>  
+    <div class="jumbotron col-lg-3 col-md-3 col-xs-12" id="divAttackArea">
+     
+      <h4 id="">Attacker Arena</h4>
+      <p id="jumbMsg"></p>
+      <div id="hint"></div>
+     
+    </div> 
+    
+    <div class="col-lg-2 col-md-2 col-xs-12 padRow btmColSpace"><button type="button" class="btn btn-warning btn-block" >Attack</button></div>
+    <div class="jumbotron col-lg-3 col-md-3 col-xs-12" id="divDefendArea">
+     
+      <h4>Defender Arena</h4>
+      <p id="jumbMsg"></p>
+      <div id="hint"></div>
+       <div class="col-lg-2 col-md-2 col-xs-0 "></div>
+       </div> 
+   </div>
+       </section>
+     
+      </div> 
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+       <aside class="graveyard">
+        <h2 class="cnctHdr" >Memorial</h2>
+        <hr>
+        <div id="divGmStats" class="gmStats"></div>
+       </aside>
+      </div>
+     </div>
+    </div>
+    <footer>
+     <hr id="footerSep">
+     <sub>&copy; Copyright 2017 Joshua Wise</sub>
+    
+   </footer>
+  </div>
+  </body>
+ <!-- Latest compiled and minified JavaScript --> 
+ 
+ <script src="assets/javascript/game.js"></script>
+</html>

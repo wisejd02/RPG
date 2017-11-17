@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(123, 121, 121);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(123, 121, 121);
+   opacity:  .8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(123, 121, 121);
+   opacity:  .8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(123, 121, 121);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgb(123, 121, 121);
+}
+html {
+ /*needed sticky footer for bootstrap */
+ position: relative;
+ min-height: 100%;
+  }
+h1,h2{
+ font-family: 'Georgia', Times, Times New Roman, serif;
+ font-weight: bold;
+}
+h1{
+ padding: 10px;
+ margin-left: 20px;
+ margin-top: -10px;
+ margin-bottom: 0;
+ width:100%;
+ background-color: rgb(15, 50, 138);
+ color: rgb(254, 254, 254);
+ line-height: 1.65;
+}
+#sectMsg{
+ color: rgb(17, 235, 238);
+ text-align: center;
+ font-size:1em;
+ margin: 20px;
+}
+.padRow{
+ padding:25px;
+}
+.btmColSpace{
+ margin-bottom:15px;
+}
+.btn-block{
+ margin-bottom:10%;
+}
+.jumbotron h1{
+ margin: 0;
+}
+.jumbotron{
+  
+  text-align: center;
+  
+}
+.gmStats{
+ margin: 10px 0 10px;
+}
+#aboutPic{
+ height: auto;
+}
+#sectHdr {
+ font-family: 'Amatic SC', cursive;
+ color:orangered;
+ font-size: 75px;
+ text-align: center;
+ margin-left: 20px;
+}
+h2{
+ line-height: 3;
+ color: rgb(15, 50, 138);
+}
+nav li{
+ height: 40px;
+ background: rgb(254,254,254);
+}
+a{
+ text-decoration: none;
+ margin: 0 3px;
+ color: rgb(153, 153, 153);
+}
+a:active, a:hover{
+ color: rgb(15, 50, 138);
+}
+.wrapper{
+ width: 100%;
+ background:rgb(238, 239, 238);
+ height: auto;
+}
+body {
+ /* Margin bottom by footer height for sticky footer*/
+ margin-bottom: 80px;
+ height: auto;
+ width: 100%;
+  }
+#main{
+ margin: 0 auto;
+ width: 98%;
+}
+.Cntr{
+margin-right: 5%; 
+margin-left: 5%;
+}
+.fData{
+  color: rgb(102, 102, 102);
+}
+section, aside{
+ background-color: rgb(254, 254, 254);
+ float:left;
+ margin-top: 20px;
+ width:100%;
+ border: 1px solid rgb(203, 203, 203);
+}
+.arena{
+  background-image: url("../images/Shao_Kahn's_Coliseum.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.graveyard{
+  background-image: url("../images/graveyard.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+}
+.imagePlaceHldr{
+ height: 0px;
+ width: 0px;
+ float: right;
+}
+h4{ 
+ 
+ clear: both;
+ float: left;
+ position: relative; 
+ top: -80px; 
+ z-index: 1;
+ font-size: 20px;
+ width: 100%;
+ height: 40px;
+ line-height: 2;
+ background-color: rgb(15, 50, 138);
+ color: rgb(254, 241, 236);
+}
+#gameWord{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2em;
+}
+.imgResize{
+  width:100%;
+}
+p{
+color: whitesmoke;
+ text-align: left;
+ margin: 5px 20px;
+ line-height: 2;
+ font-size: 2em; 
+}
+label{
+ clear: both;
+ float: left;
+ margin-left: 20px;
+}
+.inptFld{
+ clear: both;
+ text-align: left;
+ margin-left: 25px;
+ 
+ }
+.frmBtnSub{
+ clear: both;
+ float: left;
+ height: 35px;
+ width: 100px;
+ margin: 10px 0px 30px 20px;
+ background-color: rgb(15, 50, 138);
+ color: rgb(254, 241, 236);
+ font-size: 16px;
+}
+.cnctHdr{
+  font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+  color: orangered;
+  text-align: center;
+  margin-left: 20px;
+ }
+ 
+hr { 
+ display: block;
+ margin: 5px 20px 10px 20px;
+ height: 3px;
+ border-style: none;
+ background-color: rgb(238, 239, 238);
+} 
+.imgIco{
+ width: 60px;
+ height: 60px;
+ margin: 0px -3px 30px;
+ padding: 0;
+}
+img{
+clear: both;
+height: 25vh;
+}
+#footerSep{
+ display: block;
+ margin-top: 0;
+ margin-bottom: 0.5em;
+ margin-left: auto;
+ margin-right: auto;
+ border-style: none;
+ height: 7px;
+ background-color: rgb(15, 50, 138);
+}
+footer{
+ /*sticky footer for bootstrap */
+ clear: both;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ /* Set the fixed height of the footer here */
+ height: 80px;
+ line-height: 60px; /* Vertically center the text there */
+ background-color: rgb(102, 102, 102);
+}
+sub{
+ line-height:7;
+ margin: auto 0;
+ font-size:8px;
+ color: rgb(254, 254, 254);
+}
