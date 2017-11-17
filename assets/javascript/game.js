@@ -110,12 +110,12 @@ $('.btn-block').on("click", function(){
 function availDef(){
     if(graveYard.length !== numFighters -1){
         return true;
-       }else{
+    }else{
         $('#sectMsg').html(defender.id+" has been defeated!!")
         $("#gameWord").html("You Win!! You have defeated all the defenders!!");  
         resetGmPg();
         return false;
-       }
+    }
 }
 //perform fighter actions, calls to update display and calls to see if any fighter is defeated
 function fightArena(){
@@ -130,15 +130,15 @@ function fightArena(){
 }
 //checks to see if fighter has been defeated
 function chkDefeat(){
- if(defender.health < 1 && attacker.health < 1){
-  $("#divGmStats").append('<div>' + defender.id + '</b> </div>');
-  $("#gameWord").html("Both attacker, "+attacker.id+", and defender, "+defender.id+", have been defeated!! <br>Game Over!!");
-  $(".btn-block").prop("disabled",true);
-  cleanArena(attacker);
-  cleanArena(defender);
-  graveYard.push(defender);
-  resetGmPg();
- }else if(defender.health < 1){
+    if(defender.health < 1 && attacker.health < 1){
+        $("#divGmStats").append('<div>' + defender.id + '</b> </div>');
+        $("#gameWord").html("Both attacker, "+attacker.id+", and defender, "+defender.id+", have been defeated!! <br>Game Over!!");
+        $(".btn-block").prop("disabled",true);
+        cleanArena(attacker);
+        cleanArena(defender);
+        graveYard.push(defender);
+        resetGmPg();
+    }else if(defender.health < 1){
         $("#divGmStats").append('<div>' + defender.id + '</b> </div>');
         graveYard.push(defender);
         cleanArena(defender);
@@ -149,7 +149,7 @@ function chkDefeat(){
         cleanArena(attacker);
         $("#gameWord").html("You Lose!! Your attacker, "+attacker.id+", has been defeated!! <br>Game Over!!");
         $(".btn-block").prop("disabled",true);
-  resetGmPg();
+        resetGmPg();
     }
 }
 //removes defeated fighter element and clears defeated object 
